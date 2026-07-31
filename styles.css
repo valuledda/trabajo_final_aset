@@ -1,0 +1,33 @@
+/* Primer nivel: 31 aglomerados urbanos / Gran Mendoza */
+.panel-tabset[data-group="aglomerado"] > .nav-tabs > .nav-item > .nav-link {
+  font-weight: 700;
+}
+
+/* Segundo nivel: Tasas básicas / Presión laboral / Condiciones laborales */
+.panel-tabset[data-group="tasa"] > .nav-tabs > .nav-item > .nav-link {
+  font-weight: 400;
+}
+
+/* Eliminar sombra de las pestañas */
+.panel-tabset .nav-link {
+  text-shadow: none !important;
+}
+
+/* Pestañas inactivas: turquesa de Cerulean */
+.panel-tabset .nav-link {
+  color: #2fa4e7;
+  text-shadow: none !important;
+}
+
+/* Pestaña activa: gris del cuerpo del texto */
+.panel-tabset .nav-link.active,
+.panel-tabset .nav-item.show .nav-link {
+  color: #495057 !important;
+}
+
+/* Al pasar el cursor */
+.panel-tabset .nav-link:hover,
+.panel-tabset .nav-link:focus {
+  color: #495057 !important;
+}
+
