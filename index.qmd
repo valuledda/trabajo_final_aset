@@ -44,7 +44,7 @@ El análisis comprende las tasas básicas del mercado de trabajo (actividad, emp
 
 Para caracterizar de manera aproximada las condiciones de inserción laboral, se utilizan la tasa de asalarización, definida como el porcentaje de personas asalariadas sobre el total de la población ocupada, y la tasa de no registro, que expresa la proporción de asalariados sin descuento jubilatorio sobre el total de personas asalariadas. Estos datos también se presentan para el período 2016-2025. Asimismo, el documento incorpora los nuevos indicadores de informalidad laboral difundidos por el INDEC a partir de la base de microdatos de la EPH del cuarto trimestre de 2024. Dado que la información disponible todavía abarca un período reducido, el análisis se concentra en la comparación entre el cuarto trimestre de 2024 y el cuarto trimestre de 2025.[^5]
 
-[^5]: El INDEC publicó indicadores de informalidad laboral para el conjunto de los 31 aglomerados urbanos desde el cuarto trimestre de 2023. Sin embargo, hasta la fecha, las variables necesarias para reproducir estos cálculos no se encuentran incorporadas en las bases de microdatos correspondientes al período comprendido entre el cuarto trimestre de 2023 y el tercer trimestre de 2024. En consecuencia, no es posible estimar estos indicadores mediante el procesamiento de los microdatos ni obtener resultados para Gran Mendoza anteriores al cuarto trimestre de 2024. Por este motivo, el análisis se restringe a la comparación entre los últimos trimestres de 2024 y 2025.
+[^5]: El INDEC publicó indicadores de informalidad laboral para el conjunto de los 31 aglomerados urbanos desde el cuarto trimestre de 2023. Sin embargo, hasta la fecha, las variables necesarias para reproducir estos cálculos no se encuentran incorporadas en las bases de microdatos correspondientes al período comprendido entre el cuarto trimestre de 2023 y el tercer trimestre de 2024. En consecuencia, no es posible estimar estos indicadores mediante el procesamiento de los microdatos ni obtener resultados para Gran Mendoza anteriores al cuarto trimestre de 2024. Por este motivo, el análisis se restringe a la comparación entre los últimos trimestres de 2024 y 2025. Asimismo, como se trata de variables nuevas, no es posible construir series de más largo plazo. Por esta razón, se mantiene la tasa de no registro de las personas asalariadas, que permite aproximarse a la evolución de las condiciones laborales durante un período más extenso, aunque de forma restringida a los trabajadores en relación de dependencia.
 
 Posteriormente, el conjunto de estos indicadores laborales se desagrega por sexo, como aproximación al análisis de las desigualdades de género, y por grupos de edad. En ambos casos, las tasas básicas, los indicadores de presión laboral y las tasas de asalarización y no registro se comparan a partir de los promedios anuales de 2024 y 2025, mientras que los indicadores de informalidad laboral se analizan para los cuartos trimestres de esos mismos años.
 
@@ -57,7 +57,7 @@ Posteriormente, el conjunto de estos indicadores laborales se desagrega por sexo
 
 Durante 2025, la economía argentina registró una recuperación del nivel de actividad, después de dos años consecutivos de caídas del PIB (INDEC, 2026a), aunque el crecimiento perdió dinamismo durante la segunda mitad del año. La expansión fue, además, marcadamente heterogénea: mientras la intermediación financiera, la minería y el sector agropecuario presentaron un crecimiento significativo, la industria manufacturera permaneció prácticamente estancada y la administración pública y los servicios sociales y de salud registraron retrocesos. Este comportamiento se inscribe en el marco del actual modelo económico que se caracteriza por la valorización financiera, la apertura comercial y el ajuste estructural, orientación que tiende a favorecer actividades con escasa capacidad de generación de empleo y a debilitar sectores intensivos en mano de obra, con consecuencias sobre el mercado de trabajo y las condiciones de vida de la población (Manzanelli y Amoretti, 2025, 2026).
 
-Esta recuperación agregada de la actividad no se tradujo en una mejora de los indicadores del mercado de trabajo. Aunque la desocupación aumentó en 2025, no se produjo una expulsión masiva de trabajadores hacia el desempleo abierto. El deterioro laboral se expresó principalmente a través de la pérdida de puestos de trabajo asalariados regisrtados y de la expansión de las inserciones informales, en el contexto de una elevada participación económica (González, 2025; Robles et al., 2026).
+Esta recuperación agregada de la actividad no se tradujo en una mejora de los indicadores del mercado de trabajo: la desocupación aumentó y se deterioraron las condiciones de inserción laboral. No obstante, el proceso no se manifestó mediante una expulsión masiva de trabajadores hacia el desempleo abierto, sino principalmente a través de la pérdida de puestos de trabajo asalariados registrados y de la expansión de las inserciones informales, en un contexto de elevada participación económica (González, 2025; Robles et al., 2026).
 
 En relación con las tasas básicas del mercado laboral, los datos de la EPH muestran que, tras la contracción de la participación económica registrada durante la pandemia, la tasa de actividad promedio de los 31 aglomerados urbanos siguió una trayectoria ascendente y alcanzó en 2024 el nivel más elevado del período analizado (Pol et al., 2025). Durante 2025 se mantuvo en ese mismo porcentaje, lo que indica la persistencia de una elevada participación económica de la población. Este comportamiento podría vincularse, entre otros factores, con la necesidad de los hogares de sostener o ampliar sus fuentes de ingresos frente a la persistencia del deterioro de las remuneraciones laborales y la reducción del ingreso disponible.
 
@@ -326,9 +326,9 @@ print(g_ocupdem)
 
 Las tasas de subocupación demandante y de ocupación demandante registraron en Gran Mendoza un marcado incremento a partir de 2018 y se mantuvieron por encima del promedio de los 31 aglomerados urbanos. Esta trayectoria ascendente se interrumpió transitoriamente en 2020, en el contexto de la pandemia y de las restricciones a la circulación, que limitaron las posibilidades de buscar activamente otro empleo. Luego de alcanzar en 2022 los valores más elevados de la serie, ambos indicadores descendieron durante 2023 y 2024, aunque continuaron superando la media nacional.
 
-En 2025, ambas tasas volvieron a aumentar, especialmente la tasa de ocupación demandante. Este comportamiento sugiere que una parte creciente de la presión laboral no provino únicamente de personas con jornadas inferiores a 35 horas semanales, sino también de ocupados que, aun trabajando una cantidad mayor de horas, buscaban activamente otro empleo. Esta búsqueda puede vincularse con la necesidad de complementar los ingresos mediante otra ocupación o de reemplazar el empleo actual por otro que ofrezca mejores remuneraciones y/o condiciones laborales más favorables.
+En 2025, ambas tasas volvieron a aumentar, especialmente la tasa de ocupación demandante. Este comportamiento sugiere que una parte creciente de la presión laboral no proviene solamente de personas con jornadas inferiores a 35 horas semanales, sino también de ocupados que, aun trabajando una cantidad mayor de horas, buscan activamente otro empleo. Esta búsqueda puede vincularse con la necesidad de complementar los ingresos mediante otra ocupación o de reemplazar el empleo actual por otro que ofrezca mejores remuneraciones y/o condiciones laborales más favorables.
 
-En términos absolutos, la ocupación demandante aumentó en aproximadamente 13.000 ocupados respecto de 2024, por lo que el total de personas que buscaban activamente otro empleo superó las 107.000p
+En términos absolutos, la ocupación demandante aumentó en aproximadamente 13.000 ocupados respecto de 2024, por lo que el total de personas que buscaban activamente otro empleo superó las 107.000 en 2025.
 
 ```{r}
 #| include: false
@@ -369,7 +369,7 @@ print(g_ocupdem_mza)
 
 En 2025, la tasa de asalarización profundizó su trayectoria descendente y alcanzó el valor más bajo de la serie analizada. Esta evolución expresa una reducción del peso relativo de las personas asalariadas dentro de la población ocupada y, como consecuencia, una mayor participación de las inserciones no asalariadas.
 
-Por su parte, la tasa de no registro aumentó en este último año e igualó el valor máximo registrado en 2022, lo que es indicativo un deterioro en las condiciones laborales de quienes trabajan en relación de dependencia.
+Por su parte, la tasa de no registro aumentó levemente en este último año e igualó el valor máximo registrado en 2022, lo que es indicativo un deterioro en las condiciones laborales de quienes trabajan en relación de dependencia.
 
 De esta manera, se observa una pérdida del peso del trabajo asalariado dentro de la estructura ocupacional y, simultáneamente, un aumento del no registro entre quienes continúan en una relación asalariada.
 
@@ -406,9 +406,9 @@ print(g_noreg)
 
 Desde 2016, la tasa de asalarización de Gran Mendoza mostró una tendencia descendente, aunque registró recuperaciones transitorias en 2018 y 2023. Durante 2024 y 2025 volvió a disminuir y alcanzó, en el último año, el valor más bajo de la serie. Esta evolución indica una reducción del peso relativo del empleo en relación de dependencia dentro de la población ocupada y, en contrapartida, un aumento de la participación de las inserciones no asalariadas. Durante el período analizado, esta tasa de Gran Mendoza se ubicó en niveles inferiores al promedio de los 31 aglomerados urbanos.
 
-Por su parte, la tasa de no registro de las personas asalariadas presentó una tendencia ascendente de largo plazo, aunque no de manera continua. Luego del descenso registrado en 2020, en un contexto de destrucción de puestos de trabajo no registrados durante la pandemia, el indicador aumentó marcadamente en 2021. Si bien se redujo levemente entre 2022 y 2024, se mantuvo por encima de los valores prepandemia. En 2025 volvió a crecer y alcanzó el valor más elevado de la serie, muy por encima del registrado en 2016. Además, durante todo el período analizado, la incidencia del no registro en los asalariados del Gran Mendoza fue considerablemente superior al promedio de los 31 aglomerados urbanos.
+Por su parte, la tasa de no registro de las personas asalariadas presentó una tendencia ascendente, aunque no de manera continua. Luego del descenso registrado en 2020, en un contexto de destrucción de puestos de trabajo no registrados durante la pandemia, el indicador aumentó marcadamente en 2021. Si bien se redujo levemente entre 2022 y 2024, se mantuvo por encima de los valores prepandemia. En 2025 creció significativamente y alcanzó el valor más elevado de la serie, muy por encima del registrado en 2016. Además, durante todo el período analizado, la incidencia del no registro en los asalariados del Gran Mendoza fue considerablemente superior al promedio de los 31 aglomerados urbanos.
 
-En conjunto, ambos indicadores muestran una disminución de la presencia del empleo asalariado entre la población ocupada y, dentro de este grupo, una mayor incidencia de trabajadores sin descuento jubilatorio. Estos resultados reflejan un deterioro de las condiciones laborales en Gran Mendoza.
+En conjunto, ambos indicadores muestran una disminución de la presencia del empleo asalariado entre la población ocupada y, dentro de este grupo, una mayor incidencia de trabajadores sin descuento jubilatorio. Estos resultados reflejan un deterioro de las condiciones laborales en Gran Mendoza más profundo que lo observado a nivel nacional.
 
 ```{r}
 #| include: false
@@ -446,7 +446,7 @@ A partir de la publicación de la base de microdatos de la Encuesta Permanente d
 
 Si bien la literatura especializada había desarrollado diferentes aproximaciones para el estudio de la informalidad y la precariedad laboral, desde perspectivas institucionalistas, productivistas y otros enfoques teóricos (Bertranou, 2025), la EPH no permitía medir de manera directa la informalidad del trabajo independiente. Antes de la incorporación de estas variables, la medición oficial se concentraba principalmente en la informalidad asalariada mediante la tasa de no registro, construida a partir de la ausencia de aportes jubilatorios realizados por el empleador. La actualización del cuestionario permitió ampliar esta medición al conjunto de la población ocupada.
 
-La nueva propuesta adopta una definición de la informalidad laboral entendida como el "conjunto de trabajadores y/o unidades productivas que desarrollan sus actividades al margen de las normas que las regulan". En un segundo nivel, busca relevar "el cumplimiento de las normas tributarias y laborales en relación con el puesto de trabajo principal". Este diseño se inscribe en una perspectiva "legalista" de la informalidad laboral (INDEC, 2025).
+Esta nueva propuesta adopta una definición de la informalidad laboral entendida como el "conjunto de trabajadores y/o unidades productivas que desarrollan sus actividades al margen de las normas que las regulan". En un segundo nivel, busca relevar "el cumplimiento de las normas tributarias y laborales en relación con el puesto de trabajo principal". Este diseño se inscribe en una perspectiva "legalista" de la informalidad laboral (INDEC, 2025).
 
 La metodología contempla dos dimensiones de análisis. Por un lado, examina la formalidad o informalidad de las unidades económicas, lo que permite caracterizar el trabajo independiente y las actividades desarrolladas en empresas y otras unidades productivas. Para ello, se construyó la variable "sector", integrada por las categorías "formal", "informal" y "hogares". Por otro lado, analiza la formalidad de los puestos de trabajo mediante la variable "empleo", que distingue entre las categorías "formal" e "informal".[^6]
 
@@ -843,7 +843,7 @@ print(g_sexo_actividad)
 
 ```
 
-La tasa de empleo también disminuyó levemente en ambos sexos durante 2025, con un retroceso algo superior entre las mujeres. La tasa de desocupación registró un incremento muy moderado en los dos grupos, nuevamente algo más pronunciado entre las mujeres. En conjunto, al tratarse de variaciones interanuales de escasa magnitud, no se modificaron sustantivamente las brechas observadas entre mujeres y varones, aunque la tendencia indica una ampliación de las diferencias entre ambos grupos . En este marco, las mujeres siguieron enfrentando una situación laboral más desfavorable, caracterizada por una menor tasa de empleo y una mayor incidencia de la desocupación.
+La tasa de empleo también disminuyó levemente en ambos sexos durante 2025, con un retroceso algo superior entre las mujeres. La tasa de desocupación registró un incremento moderado en los dos grupos, nuevamente más pronunciado en las mujeres. En conjunto, al tratarse de variaciones interanuales de escasa magnitud, no se modificaron sustantivamente las brechas observadas entre sexos, aunque la tendencia indica una ampliación de las diferencias entre ambos grupos. En este marco, las mujeres siguieron enfrentando una situación laboral más desfavorable, caracterizada por una menor tasa de empleo y una mayor incidencia de la desocupación.
 
 ```{r}
 #| echo: false
@@ -930,7 +930,7 @@ print(g_sexo_noreg)
 
 ```
 
-Entre el cuarto trimestre de 2024 y el mismo período de 2025, la tasa de empleo informal aumentó en ambos sexos, con un incremento algo más pronunciado entre las mujeres, lo que amplió levemente la brecha de género. Este nuevo indicador, que comprende a la totalidad de la población ocupada y no lo solo a las personas asalariadas, confirma que las mujeres enfrentan mayores desventajas en el acceso a empleos regulados.
+Entre el cuarto trimestre de 2024 y el mismo período de 2025, la tasa de empleo informal aumentó en ambos sexos, con un crecimiento más marcado entre las mujeres, lo que amplió levemente la brecha de género. Este nuevo indicador, que comprende a la totalidad de la población ocupada y no lo solo a las personas asalariadas, confirma que las mujeres enfrentan mayores desventajas en el acceso a empleos regulados.
 
 ```{r}
 #| include: false
@@ -1109,7 +1109,7 @@ print(g_sexo_ocupdem_mza)
 
 Como se observó a nivel agregado, la tasa de asalarización en Gran Mendoza fue inferior a la registrada en el conjunto de los 31 aglomerados urbanos, tanto entre mujeres como entre varones. Durante 2025, el descenso fue más pronunciado entre los varones, lo que refleja un aumento relativo del peso de las inserciones laborales no asalariadas dentro de este grupo.
 
-La tasa de no registro de las personas asalariadas fue considerablemente más elevada entre las mujeres ocupadas de Gran Mendoza que entre las mujeres del conjunto de los 31 aglomerados urbanos. Asimismo, la brecha respecto de los varones fue más amplia. En 2025, el no registro aumentó en ambos grupos, aunque con mayor intensidad entre los varones, lo que redujo la diferencia entre sexos. Aun así, las mujeres continuaron presentando una incidencia significativamente mayor de empleo asalariado no registrado, lo que evidencia un acceso más limitado a empleos registrados y con cobertura de la seguridad social.
+La tasa de no registro de las personas asalariadas fue considerablemente más elevada entre las mujeres ocupadas de Gran Mendoza que entre las mujeres del conjunto de los 31 aglomerados urbanos. Asimismo, la brecha respecto de los varones fue más amplia. En 2025, el no registro aumentó en ambos grupos, aunque con mayor intensidad entre los varones, lo que redujo la diferencia entre sexos. A pesar de ello, las mujeres continuaron presentando una incidencia significativamente mayor de empleo asalariado no registrado, lo que evidencia un acceso más limitado a empleos con cobertura de la seguridad social.
 
 ```{r}
 #| include: false
@@ -1562,11 +1562,10 @@ tabla7
 
 #### Condiciones laborales
 
-Los niveles de la tasa de asalarización de las personas jóvenes fueron similares a los registrados en el conjunto de los 31 aglomerados urbanos. En 2025, este indicador disminuyó en ambos grupos de edad, aunque con mayor intensidad entre las personas de 30 a 64 años. Sin embargo, esta cercanía en los niveles de asalarización contrastó con diferencias más marcadas en las condiciones bajo las cuales se desarrollaba el empleo asalariado.
+Los niveles de la tasa de asalarización de las personas jóvenes fueron similares a los registrados en el conjunto de los 31 aglomerados urbanos. En 2025, este indicador disminuyó en ambos grupos de edad, aunque con mayor intensidad entre las personas de 30 a 64 años. Sin embargo, esta cercanía con el total nacional en los niveles de asalarización contrastó con diferencias más marcadas en las condiciones bajo las cuales se desarrollaba el empleo asalariado.
 
 En particular, la tasa de no registro se ubicó en niveles considerablemente superiores en Gran Mendoza respecto del conjunto de los 31 aglomerados urbanos, especialmente entre las personas jóvenes. Entre 2024 y 2025, el indicador aumentó en ambos grupos de edad, pero lo hizo con mayor intensidad entre quienes tenían entre 14 y 29 años. De este modo, a fines de 2025, casi dos de cada tres jóvenes asalariados no percibían descuentos jubilatorios.
 
-La tasa de empleo informal refuerza la gravedad de esta situación, ya que considera al conjunto de la población ocupada y no solo a quienes trabajan en relación de dependencia. Entre los cuartos trimestres de 2024 y 2025, la informalidad aumentó tanto entre jóvenes como entre adultos. No obstante, su incidencia continuó siendo considerablemente más alta entre las personas de 14 a 29 años y superior a la registrada para ese mismo grupo en el conjunto de los 31 aglomerados urbanos: en Gran Mendoza, casi siete de cada diez ocupados jóvenes tenían un empleo informal. En síntesis, estos indicadores muestran que la población joven enfrenta mayores dificultades tanto para acceder al empleo como para hacerlo en condiciones de formalidad.
 
 ```{r}
 #| include: false
@@ -1608,6 +1607,9 @@ tabla8 <- tasas_edad_mza %>%
 
 tabla8
 ```
+
+La tasa de empleo informal refuerza la gravedad de esta situación, ya que considera al conjunto de la población ocupada y no solo a quienes trabajan en relación de dependencia. Entre los cuartos trimestres de 2024 y 2025, la informalidad aumentó tanto entre jóvenes como entre adultos. No obstante, su incidencia continuó siendo considerablemente más alta entre las personas de 14 a 29 años y superior a la registrada para ese mismo grupo en el conjunto de los 31 aglomerados urbanos: en Gran Mendoza, casi siete de cada diez ocupados jóvenes tenían un empleo informal. En síntesis, estos indicadores muestran que la población joven enfrenta mayores dificultades a nivel local tanto para acceder al empleo como para hacerlo en condiciones de formalidad.
+
 
 ```{r}
 #| include: false
