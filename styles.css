@@ -55,3 +55,31 @@
   background-color: #ffffff !important;
   color: #2FA4E7 !important;
 }
+
+/* Recuadro de Cafecito en el informe */
+
+
+/* Borde izquierdo del callout */
+.callout.cafecito-callout {
+  border-left: 6px solid #2FA4E7 !important;
+}
+
+/* Encabezado plegable */
+.callout.cafecito-callout .callout-header {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #2FA4E7 !important;
+}
+
+/* Texto del título */
+.callout.cafecito-callout .callout-title-container,
+.callout.cafecito-callout .callout-title {
+  color: #2FA4E7 !important;
+  font-weight: 600;
+}
+
+/* Evita que el título cambie de color al pasar el cursor */
+.callout.cafecito-callout .callout-header:hover {
+  background-color: #ffffff !important;
+  color: #2FA4E7 !important;
+}

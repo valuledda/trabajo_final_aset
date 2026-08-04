@@ -49,12 +49,12 @@ Para caracterizar de manera aproximada las condiciones de inserción laboral, se
 
 Finalmente, los indicadores se desagregan por sexo y grupos de edad, con el propósito de analizar las desigualdades de género y la situación de la población joven. Para estas desagregaciones, se comparan los promedios anuales de 2024 y 2025, excepto en el caso de la informalidad laboral, que se analiza a partir de los datos correspondientes a los cuartos trimestres de ambos años.
 
-::: {.callout-note .tablero-interactivo collapse="true" icon="false" title="Tablero interactivo"}
-El tablero permite consultar la evolución de los indicadores laborales durante 2016-2025, tanto en los 31 aglomerados urbanos como en Gran Mendoza. También, presenta las series completas según sexo y grupos de edad. En el informe estos datos se analizan únicamente para 2024 y 2025.
+::: {.callout-note .cafecito-callout appearance="simple" icon="false"}
+## ¿Te resulta útil este informe?
 
-Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya que solo se encuentran disponibles desde el cuarto trimestre de 2024 y todavía no permiten construir una serie temporal para todo el período.
+Este proyecto se desarrolla de manera independiente y se encuentra disponible de forma abierta. Si querés contribuir a su mantenimiento y actualización, podés hacerlo mediante Cafecito.
 
-[Explorar el tablero](https://valuledda-indicadores-laborales.share.connect.posit.cloud){.btn .btn-primary target="_blank"}
+[Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}
 :::
 
 # Principales indicadores del mercado laboral
@@ -1669,6 +1669,14 @@ print(g_edad_empleo_informal_mza)
 :::
 :::::
 
+# **Tablero interactivo**
+
+Como complemento a este informe se presenta un tablero interactivo que permite consultar la evolución de los indicadores laborales durante 2016-2025, tanto en los 31 aglomerados urbanos como en Gran Mendoza. También, permite acceder a las series completas según sexo y grupos de edad. En el informe estos datos se analizan únicamente para 2024 y 2025.
+
+Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya que solo se encuentran disponibles desde el cuarto trimestre de 2024 y todavía no permiten construir una serie temporal para todo el período.
+
+[Explorar el tablero](https://valuledda-indicadores-laborales.share.connect.posit.cloud){.btn .btn-primary target="_blank"}
+
 # **Referencias bibliográficas**
 
 - Bertranou, F. (2025). Informalidad laboral: evolución conceptual, medición y enfoque para la transición hacia la formalización. Nota Técnica. Organización Internacional del Trabajo.
@@ -1703,18 +1711,18 @@ print(g_edad_empleo_informal_mza)
 
 # **Acerca del informe**
 
-## Cómo citar este trabajo
+# Cómo citar este trabajo
 
 Ledda, Valentina. (2026). El mercado de trabajo en Argentina y Mendoza durante 2025: indicadores elaborados a partir de la Encuesta Permanente de Hogares (EPH). Disponible en: <https://informe-mercado-trabajo-2025.netlify.app/>
 
-## Sobre la autora
+# Sobre la autora
 
 **Valentina Ledda** es doctora en Ciencias Sociales, especialista en Métodos y técnicas de investigación social y licenciada en Sociología. Se dedica a la investigación social aplicada, el análisis de datos y la construcción de indicadores, especialmente en temas vinculados con el mercado de trabajo, la desigualdad y las condiciones de vida. Actualmente desarrolla este proyecto como investigadora independiente.
 
 [Ver perfil en LinkedIn](https://www.linkedin.com/in/valentina-ledda/){.btn .btn-outline-primary target="_blank"}
 
-## Apoyá este proyecto
+# Apoyá este proyecto
 
 La elaboración y actualización de este informe constituyen un trabajo independiente que no cuenta actualmente con financiamiento institucional. Si considerás valiosa la producción periódica y de acceso abierto de información sobre el mercado de trabajo en Argentina y Mendoza, podés contribuir a sostenerla mediante Cafecito.
 
-[![](https://cdn.cafecito.app/imgs/buttons/button_6.svg){fig-align="left" fig-alt="Invitame un Cafecito"}](https://cafecito.app/valuledda)
+[Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}
