@@ -57,7 +57,7 @@ Este proyecto se desarrolla de manera independiente y se encuentra disponible de
 [Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}
 :::
 
-# Principales indicadores del mercado laboral
+# **Principales indicadores del mercado laboral**
 
 ## Tasas de actividad, empleo y desocupación (2016-2025)
 
@@ -369,7 +369,7 @@ print(g_ocupdem_mza)
 ```
 :::
 
-# Aproximación a las condiciones laborales
+# **Aproximación a las condiciones laborales**
 
 ## Tasas de asalarización y de no registro (2016-2025)
 
@@ -715,7 +715,7 @@ print(g_empleo_informal_mza)
 ```
 :::
 
-# Desigualdades laborales según sexo (2024-2025)
+# **Desigualdades laborales según sexo (2024-2025)**
 
 En esta sección se presentan los indicadores del mercado de trabajo abordados previamente desagregados por sexo, como una aproximación al análisis de las desigualdades de género en el ámbito laboral.
 
@@ -1203,7 +1203,7 @@ print(g_sexo_empleo_informal_mza)
 
 [^8]: La brecha se calcula como el cociente entre los resultados del indicador para las mujeres y los varones (INDEC, 2022).
 
-# Desigualdades laborales según grupos de edad (2024-2025)
+# **Desigualdades laborales según grupos de edad (2024-2025)**
 
 ::::: {.panel-tabset group="aglomerado"}
 ### 31 aglomerados urbanos
@@ -1677,7 +1677,7 @@ Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya 
 
 [Explorar el tablero](https://valuledda-indicadores-laborales.share.connect.posit.cloud){.btn .btn-primary target="_blank"}
 
-# **Referencias bibliográficas**
+# Referencias bibliográficas
 
 - Bertranou, F. (2025). Informalidad laboral: evolución conceptual, medición y enfoque para la transición hacia la formalización. Nota Técnica. Organización Internacional del Trabajo.
 
@@ -1709,8 +1709,6 @@ Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya 
 
 - Robles, R., Giannecchini, A. y Ledda, V. (2026). Deterioro y resquebrajamiento de la estructura social del trabajo. Documento de trabajo N° 2026/1. Observatorio de la Deuda Social Argentina.
 
-# **Acerca del informe**
-
 # Cómo citar este trabajo
 
 Ledda, Valentina (2026). El mercado de trabajo en Argentina y Mendoza durante 2025: indicadores elaborados a partir de la Encuesta Permanente de Hogares (EPH). Disponible en: <https://informe-mercado-trabajo-2025.netlify.app/>
@@ -1721,7 +1719,7 @@ Ledda, Valentina (2026). El mercado de trabajo en Argentina y Mendoza durante 20
 
 [Ver perfil en LinkedIn](https://www.linkedin.com/in/valentina-ledda/){.btn .btn-outline-primary target="_blank"}
 
-# Apoyá este proyecto
+# Acerca de este proyecto
 
 La elaboración y actualización de este informe constituyen un trabajo independiente que no cuenta actualmente con financiamiento institucional. Si considerás valiosa la producción periódica y de acceso abierto de información sobre el mercado de trabajo en Argentina y Mendoza, podés contribuir a sostenerla mediante Cafecito.
 

@@ -125,6 +125,55 @@ ui <- navbarPage(
           selected = "Total"
         ),
         
+        tags$div(
+          style = "
+    margin-top: 22px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    text-align: left;
+  ",
+          
+          tags$div(
+            style = "
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 1.3;
+    ",
+            
+            HTML("<strong>¿Te resulta útil este tablero?</strong>")
+          ),
+          
+          tags$p(
+            style = "
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    ",
+            
+            "Este proyecto se desarrolla de manera independiente y se encuentra disponible de forma abierta.",
+            "Podés colaborar con su mantenimiento y actualización."
+          ),
+          
+          tags$a(
+            href = "https://cafecito.app/valuledda",
+            target = "_blank",
+            rel = "noopener noreferrer",
+            class = "btn btn-primary",
+            
+            style = "
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      padding: 8px 12px;
+      float: none;
+    ",
+            
+            "Invitame un Cafecito ☕ "
+          )
+        ),
+        
         width = 3
       ),
       
@@ -138,7 +187,7 @@ ui <- navbarPage(
         width = 9
       )
     )
-  ),
+  ), 
   
   tabPanel(
     title = "Análisis del mercado de trabajo",
@@ -300,19 +349,16 @@ tabPanel(
         tags$a(
           href = "https://cafecito.app/valuledda",
           target = "_blank",
-          title = "Invitame un Cafecito",
-          
-          tags$img(
-            src = "https://cdn.cafecito.app/imgs/buttons/button_6.svg",
-            alt = "Invitame un Cafecito",
-            style = "
-              display: block;
-              width: 210px;
-              max-width: 100%;
-              height: auto;
-              margin: 20px 0 0 0;
-            "
-          )
+          rel = "noopener noreferrer",
+          class = "btn btn-primary",
+          style = "
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+  ",
+          HTML("Invitame un Cafecito&nbsp; ☕")
         ),
         
         tags$hr(),

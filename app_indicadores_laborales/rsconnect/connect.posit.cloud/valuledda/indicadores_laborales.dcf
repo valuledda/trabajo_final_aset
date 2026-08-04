@@ -10,3 +10,4 @@ url: https://connect.posit.cloud/valuledda/content/019fc7ae-1497-7616-530f-f7f8d
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: preparación_datos_para_shiny.R
