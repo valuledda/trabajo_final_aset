@@ -1,7 +1,7 @@
 ---
 title: "El mercado de trabajo en Argentina y Mendoza durante 2025"
 subtitle: "Indicadores elaborados a partir de la Encuesta Permanente de Hogares (EPH)"
-date: 2026-08-1
+date: 2026-08-4
 author-title: "Autora"
 author: "Valentina Ledda · Doctora en Ciencias Sociales"
 lang: es
@@ -1713,7 +1713,7 @@ Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya 
 
 # Cómo citar este trabajo
 
-Ledda, Valentina. (2026). El mercado de trabajo en Argentina y Mendoza durante 2025: indicadores elaborados a partir de la Encuesta Permanente de Hogares (EPH). Disponible en: <https://informe-mercado-trabajo-2025.netlify.app/>
+Ledda, Valentina (2026). El mercado de trabajo en Argentina y Mendoza durante 2025: indicadores elaborados a partir de la Encuesta Permanente de Hogares (EPH). Disponible en: <https://informe-mercado-trabajo-2025.netlify.app/>
 
 # Sobre la autora
 
