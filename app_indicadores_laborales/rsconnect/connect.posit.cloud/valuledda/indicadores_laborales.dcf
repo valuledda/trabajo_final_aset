@@ -1,0 +1,12 @@
+name: indicadores_laborales
+title: indicadores_laborales
+username: valuledda
+account: valuledda
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 019fc7ae-1497-7616-530f-f7f8df790436
+bundleId:
+url: https://connect.posit.cloud/valuledda/content/019fc7ae-1497-7616-530f-f7f8df790436
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

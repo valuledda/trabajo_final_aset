@@ -31,3 +31,27 @@
   color: #495057 !important;
 }
 
+/* Borde izquierdo del callout */
+.callout.tablero-interactivo {
+  border-left: 6px solid #2FA4E7 !important;
+}
+
+/* Encabezado plegable */
+.callout.tablero-interactivo .callout-header {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #2FA4E7 !important;
+}
+
+/* Texto del título */
+.callout.tablero-interactivo .callout-title-container,
+.callout.tablero-interactivo .callout-title {
+  color: #2FA4E7 !important;
+  font-weight: 600;
+}
+
+/* Evita que el título cambie de color al pasar el cursor */
+.callout.tablero-interactivo .callout-header:hover {
+  background-color: #ffffff !important;
+  color: #2FA4E7 !important;
+}
