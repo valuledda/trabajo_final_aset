@@ -5,3 +5,5 @@
 
 /.quarto/
 **/*.quarto_ipynb
+
+app_indicadores_laborales/
