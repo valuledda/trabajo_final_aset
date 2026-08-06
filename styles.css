@@ -119,3 +119,9 @@
 .resultados-callout li:last-child {
   margin-bottom: 0;
 }
+
+/* Para que muestre el mes de la fecha de publicación con inicial mayúscula */
+
+.quarto-title-meta-contents .date {
+  text-transform: capitalize;
+}
