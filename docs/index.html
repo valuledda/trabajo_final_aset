@@ -57,13 +57,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><strong>Introducción</strong></a></li>
+  <li><a href="#resultados-destacados" id="toc-resultados-destacados" class="nav-link" data-scroll-target="#resultados-destacados"><strong>Resultados destacados</strong></a></li>
   <li><a href="#principales-indicadores-del-mercado-laboral" id="toc-principales-indicadores-del-mercado-laboral" class="nav-link" data-scroll-target="#principales-indicadores-del-mercado-laboral"><strong>Principales indicadores del mercado laboral</strong></a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#tasas-de-actividad-empleo-y-desocupación-2016-2025" id="toc-tasas-de-actividad-empleo-y-desocupación-2016-2025" class="nav-link" data-scroll-target="#tasas-de-actividad-empleo-y-desocupación-2016-2025">Tasas de actividad, empleo y desocupación (2016-2025)</a></li>
   <li><a href="#presión-sobre-el-mercado-de-trabajo-subocupación-y-ocupación-demandante-2016-2025" id="toc-presión-sobre-el-mercado-de-trabajo-subocupación-y-ocupación-demandante-2016-2025" class="nav-link" data-scroll-target="#presión-sobre-el-mercado-de-trabajo-subocupación-y-ocupación-demandante-2016-2025">Presión sobre el mercado de trabajo: subocupación y ocupación demandante (2016-2025)</a></li>
   </ul></li>
   <li><a href="#aproximación-a-las-condiciones-laborales" id="toc-aproximación-a-las-condiciones-laborales" class="nav-link" data-scroll-target="#aproximación-a-las-condiciones-laborales"><strong>Aproximación a las condiciones laborales</strong></a>
-  <ul>
+  <ul class="collapse">
   <li><a href="#tasas-de-asalarización-y-de-no-registro-2016-2025" id="toc-tasas-de-asalarización-y-de-no-registro-2016-2025" class="nav-link" data-scroll-target="#tasas-de-asalarización-y-de-no-registro-2016-2025">Tasas de asalarización y de no registro (2016-2025)</a></li>
   <li><a href="#nueva-medición-de-la-informalidad-laboral-4t-2024-4t-2025" id="toc-nueva-medición-de-la-informalidad-laboral-4t-2024-4t-2025" class="nav-link" data-scroll-target="#nueva-medición-de-la-informalidad-laboral-4t-2024-4t-2025">Nueva medición de la informalidad laboral (4T 2024-4T 2025)</a></li>
   </ul></li>
@@ -113,6 +114,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div style="margin: 0.5rem 0 0 0 !important;">
+  <button id="compartir-informe" type="button" class="btn btn-outline-primary btn-sm" style="
+      padding: 7px 13px;
+      margin-bottom: 0 !important;
+    ">
+    🔗 Compartir informe
+  </button>
+
+  <span id="estado-compartir-informe" style="
+      margin-left: 8px;
+      font-size: 13px;
+      color: #6c757d;
+    "></span>
+</div>
+
+<script>
+(() => {
+  const boton = document.getElementById("compartir-informe");
+  const estado = document.getElementById("estado-compartir-informe");
+
+  if (!boton) return;
+
+  const datos = {
+    title: "El mercado de trabajo en Argentina y Mendoza durante 2025",
+    text: "Informe elaborado a partir de la Encuesta Permanente de Hogares.",
+    url: "https://informe-mercado-trabajo-2025.netlify.app/"
+  };
+
+  async function copiarEnlace() {
+    try {
+      await navigator.clipboard.writeText(datos.url);
+      estado.textContent = "Enlace copiado";
+    } catch (error) {
+      window.prompt("Copiá este enlace:", datos.url);
+    }
+  }
+
+  boton.addEventListener("click", async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share(datos);
+      } else {
+        await copiarEnlace();
+      }
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        await copiarEnlace();
+      }
+    }
+
+    window.setTimeout(() => {
+      estado.textContent = "";
+    }, 2500);
+  });
+})();
+</script>
 <section id="introducción" class="level1">
 <h1><strong>Introducción</strong></h1>
 <p>Este informe tiene como objetivo presentar datos sistematizados que contribuyan al análisis de la situación del mercado de trabajo en Argentina y Mendoza durante 2025.</p>
@@ -136,6 +193,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="resultados-destacados" class="level1">
+<h1><strong>Resultados destacados</strong></h1>
+<div class="resultados-callout callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li><p><strong>La recuperación de la actividad económica durante 2025 no se tradujo en una mejora del mercado de trabajo</strong>. En el conjunto de los 31 aglomerados urbanos, la participación económica se mantuvo elevada, mientras que el empleo volvió a disminuir y la desocupación aumentó por segundo año consecutivo.</p></li>
+<li><p><strong>El deterioro laboral se expresó especialmente en las condiciones del empleo.</strong> La pérdida de peso del trabajo asalariado se profundizó, al mismo tiempo que aumentaron el no registro en las personas asalariadas y el empleo informal en el conjunto de los ocupados. Esto indica que el empeoramiento no se manifestó únicamente mediante una mayor desocupación, sino también a través de inserciones laborales más precarias.</p></li>
+<li><p><strong>En Gran Mendoza, el deterioro del mercado de trabajo fue más pronunciado.</strong> El aumento de la desocupación estuvo acompañado por una intensificación de la presión laboral, reflejada en el crecimiento de la subocupación demandante y de la búsqueda de otro empleo entre las personas ocupadas. A su vez, la reducción de la tasa asalarización y el incremento de la tasa de no registro profundizaron la distancia respecto del promedio de los 31 aglomerados urbanos.</p></li>
+<li><p><strong>Las desigualdades laborales afectaron especialmente a las mujeres y a la población joven.</strong> En Gran Mendoza, el aumento de la desocupación fue más intenso entre las mujeres, quienes también presentaron mayores niveles de no registro e informalidad que los observados en el conjunto de los aglomerados urbanos. Por su parte, la población joven enfrentó mayores dificultades tanto para acceder al empleo como para hacerlo en condiciones de formalidad.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
 <section id="principales-indicadores-del-mercado-laboral" class="level1">
 <h1><strong>Principales indicadores del mercado laboral</strong></h1>
 <section id="tasas-de-actividad-empleo-y-desocupación-2016-2025" class="level2">
@@ -146,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Durante 2025, la economía argentina registró una recuperación del nivel de actividad, después de dos años consecutivos de caídas del PIB (INDEC, 2026a), aunque el crecimiento perdió dinamismo durante la segunda mitad del año. La expansión fue, además, marcadamente heterogénea: mientras la intermediación financiera, la minería y el sector agropecuario presentaron un crecimiento significativo, la industria manufacturera permaneció prácticamente estancada y la administración pública y los servicios sociales y de salud registraron retrocesos. Este comportamiento se inscribe en el marco del actual modelo económico que se caracteriza por la valorización financiera, la apertura comercial y el ajuste estructural, orientación que tiende a favorecer actividades con escasa capacidad de generación de empleo y a debilitar sectores intensivos en mano de obra, con consecuencias sobre el mercado de trabajo y las condiciones de vida de la población (Manzanelli y Amoretti, 2025, 2026).</p>
 <p>Esta recuperación agregada de la actividad no se tradujo en una mejora de los indicadores del mercado de trabajo: la desocupación aumentó y se deterioraron las condiciones de inserción laboral. No obstante, el proceso no se manifestó mediante una expulsión masiva de trabajadores hacia el desempleo abierto, sino principalmente a través de la pérdida de puestos de trabajo asalariados registrados y de la expansión de las inserciones informales, en un contexto de elevada participación económica (González, 2025; Robles et al., 2026).</p>
-<p>En relación con las tasas básicas del mercado laboral, los datos de la EPH muestran que, tras la contracción de la participación económica registrada durante la pandemia, la tasa de actividad promedio de los 31 aglomerados urbanos siguió una trayectoria ascendente y alcanzó en 2024 el nivel más elevado del período analizado (Pol et al., 2025). Durante 2025 se mantuvo en ese mismo porcentaje, lo que indica la persistencia de una elevada participación económica de la población. Este comportamiento podría vincularse, entre otros factores, con la necesidad de los hogares de sostener o ampliar sus fuentes de ingresos frente a la persistencia del deterioro de las remuneraciones laborales y la reducción del ingreso disponible.</p>
+<p>En relación con las tasas básicas del mercado laboral, los datos de la EPH muestran que, tras la contracción de la participación económica registrada durante la pandemia, la tasa de actividad promedio de los 31 aglomerados urbanos siguió una trayectoria ascendente y alcanzó en 2024 el nivel más elevado del período analizado (Pol et al., 2025). Durante 2025 se mantuvo en ese mismo porcentaje, lo que indica la persistencia de una elevada participación económica de la población. Este comportamiento podría vincularse, entre otros factores, con la necesidad de los hogares de sostener o ampliar sus fuentes de ingresos frente a la persistencia del deterioro de las remuneraciones laborales y la reducción del ingreso disponible. (González y Bonofiglio, 2025;</p>
 <p>La tasa de empleo también mostró una recuperación sostenida luego de la pandemia, que se extendió hasta 2023. Sin embargo, disminuyó durante los dos años siguientes. En correspondencia con esta evolución, la tasa de desocupación alcanzó su valor más bajo en 2023 y aumentó en 2024 y 2025. En conjunto, el desempeño de estos indicadores sugiere un debilitamiento de la capacidad del mercado de trabajo para generar puestos y absorber la oferta laboral existente.</p>
 <div class="cell">
 <div class="cell-output-display">

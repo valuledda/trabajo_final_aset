@@ -171,10 +171,46 @@ ui <- navbarPage(
     ",
             
             "Invitame un Cafecito ☕ "
-          )
+          ),
+          
+        ),  # Acá termina el recuadro gris
+      
+      # Botón para compartir, por fuera del recuadro
+      tags$div(
+        style = "
+    margin-top: 12px;
+    text-align: left;
+  ",
+        
+        tags$button(
+          id = "compartir_tablero",
+          type = "button",
+          class = "btn",
+          style = "
+      display: inline-block;
+      width: auto;
+      margin: 0;
+      padding: 8px 13px;
+      color: #2FA4E7;
+      background-color: #ffffff;
+      border: 1px solid #2FA4E7;
+      border-radius: 5px;
+    ",
+          HTML("🔗 Compartir tablero")
         ),
         
-        width = 3
+        tags$span(
+          id = "estado_compartir_tablero",
+          style = "
+      display: block;
+      margin-top: 6px;
+      font-size: 13px;
+      color: #6c757d;
+    "
+        )
+      ),
+      
+      width = 3
       ),
       
       mainPanel(
@@ -238,6 +274,58 @@ ui <- navbarPage(
             "Leer el informe completo"
           )
         )
+      )
+    ),
+    
+    tags$head(
+      tags$script(
+        HTML("
+      async function copiarEnlaceTablero(url, estado) {
+        try {
+          await navigator.clipboard.writeText(url);
+
+          if (estado) {
+            estado.textContent = 'Enlace copiado';
+          }
+        } catch (error) {
+          window.prompt('Copiá este enlace:', url);
+        }
+      }
+
+      document.addEventListener('click', async function(event) {
+        const boton = event.target.closest('#compartir_tablero');
+
+        if (!boton) return;
+
+        const estado = document.getElementById(
+          'estado_compartir_tablero'
+        );
+
+        const datos = {
+          title: 'Indicadores laborales en Argentina y Mendoza',
+          text: 'Tablero interactivo con indicadores laborales elaborados a partir de la EPH.',
+          url: 'https://valuledda-indicadores-laborales.share.connect.posit.cloud/'
+        };
+
+        try {
+          if (navigator.share) {
+            await navigator.share(datos);
+          } else {
+            await copiarEnlaceTablero(datos.url, estado);
+          }
+        } catch (error) {
+          if (error.name !== 'AbortError') {
+            await copiarEnlaceTablero(datos.url, estado);
+          }
+        }
+
+        window.setTimeout(function() {
+          if (estado) {
+            estado.textContent = '';
+          }
+        }, 2500);
+      });
+    ")
       )
     )
 ),

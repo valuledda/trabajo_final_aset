@@ -93,3 +93,29 @@
   background-color: #ffffff !important;
   color: #2FA4E7 !important;
 }
+
+/* Bloque de principales resultados */
+
+.resultados-callout {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  border-top: 1px solid #2FA4E7 !important;
+  border-right: 1px solid #2FA4E7 !important;
+  border-bottom: 1px solid #2FA4E7 !important;
+  border-left: 6px solid #2FA4E7 !important;
+  background-color: #ffffff;!important
+}
+
+.resultados-callout ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.resultados-callout li {
+  margin-bottom: 0.8rem;
+  line-height: 1.55;
+}
+
+.resultados-callout li:last-child {
+  margin-bottom: 0;
+}
