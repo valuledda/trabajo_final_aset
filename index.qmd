@@ -13,13 +13,13 @@ format:
     toc-title: "Contenido"
     toc-location: left
     toc-depth: 3
-    fontsize: "15px"
+    fontsize: "14px"
     css: styles.css
     smooth-scroll: true
     anchor-sections: false
     code-tools: false
     tabsets: true
-    footnotes-hover: false
+    footnotes-hover: true
 execute:
   cache: false
   freeze: false
@@ -99,7 +99,7 @@ Este informe tiene como objetivo presentar datos sistematizados que contribuyan 
 
 La fuente de información utilizada es la Encuesta Permanente de Hogares (EPH), elaborada por el Instituto Nacional de Estadística y Censos (INDEC). Los indicadores fueron construidos a partir del procesamiento de las bases de microdatos de la encuesta, realizado íntegramente en R para facilitar su actualización periódica. Los resultados se presentan como promedios anuales elaborados a partir de los trimestres disponibles,[^1] criterio que permite reducir la incidencia de las fluctuaciones estacionales y ofrecer una lectura más estable de las tendencias.[^2]
 
-[^1]: El promedio del año 2016 se elaboró a partir de los datos del segundo, tercero y cuarto trimestre, ya que la base correspondiente al primero no fue publicada por INDEC en el marco de la emergencia estadística. Mas informacion en: <https://www.indec.gob.ar/ftp/cuadros/sociedad/anexo_informe_eph_23_08_16.pdf>
+[^1]: El promedio del año 2016 se elaboró a partir de los datos del segundo, tercero y cuarto trimestre, ya que la base correspondiente al primero no fue publicada por INDEC en el marco de la emergencia estadística (INDEC, 2016).
 
 [^2]: Esta decisión metodológica también permite reunir un mayor número de observaciones en el caso de Gran Mendoza, lo que contribuye a mejorar la solidez de las estimaciones.
 
@@ -113,17 +113,9 @@ El análisis comprende las tasas básicas del mercado de trabajo (actividad, emp
 
 Para caracterizar de manera aproximada las condiciones de inserción laboral, se utilizan la tasa de asalarización, definida como el porcentaje de personas asalariadas sobre el total de la población ocupada, y la tasa de no registro, que expresa la proporción de asalariados sin descuento jubilatorio sobre el total de personas asalariadas. Estos datos también se presentan para el período 2016-2025. Asimismo, el documento incorpora los nuevos indicadores de informalidad laboral incluidos en las bases de microdatos de la EPH a partir del cuarto trimestre de 2024. Dado que la información disponible todavía abarca un período reducido, el análisis se concentra en la comparación entre el cuarto trimestre de 2024 y el cuarto trimestre de 2025.[^5]
 
-[^5]: El INDEC publicó indicadores de informalidad laboral para el conjunto de los 31 aglomerados urbanos desde el cuarto trimestre de 2023. Sin embargo, hasta la fecha, las variables necesarias para reproducir estos cálculos no se encuentran incorporadas en las bases de microdatos correspondientes al período comprendido entre el cuarto trimestre de 2023 y el tercer trimestre de 2024. En consecuencia, no es posible estimar estos indicadores mediante el procesamiento de los microdatos ni obtener resultados para Gran Mendoza anteriores al cuarto trimestre de 2024. Por este motivo, el análisis se restringe a la comparación entre los últimos trimestres de 2024 y 2025. Asimismo, como se trata de variables nuevas, no es posible construir series de más largo plazo. Por esta razón, se mantiene la tasa de no registro de las personas asalariadas, que permite aproximarse a la evolución de las condiciones laborales durante un período más extenso, aunque de forma restringida a los trabajadores en relación de dependencia.
+[^5]: El INDEC publicó indicadores de informalidad laboral para los 31 aglomerados urbanos desde el cuarto trimestre de 2023. Sin embargo, las variables necesarias para reproducir estos cálculos a partir de las bases de microdatos solo se encuentran disponibles desde el cuarto trimestre de 2024, por lo que no es posible obtener estimaciones anteriores para Gran Mendoza. Por este motivo, el análisis se restringe a la comparación entre los últimos trimestres de 2024 y 2025. Asimismo, como se trata de variables nuevas, no es posible construir series de más largo plazo. Por esta razón, se mantiene la tasa de no registro de las personas asalariadas como indicador de las condiciones laborales.
 
 Finalmente, los indicadores se desagregan por sexo y grupos de edad, con el propósito de analizar las desigualdades de género y la situación de la población joven. Para estas desagregaciones, se comparan los promedios anuales de 2024 y 2025, excepto en el caso de la informalidad laboral, que se analiza a partir de los datos correspondientes a los cuartos trimestres de ambos años.
-
-::: {.callout-note .cafecito-callout appearance="simple" icon="false"}
-## ¿Te resulta útil este informe?
-
-Este proyecto se desarrolla de manera independiente y se encuentra disponible de forma abierta. Si querés contribuir a su mantenimiento y actualización, podés hacerlo mediante Cafecito.
-
-[Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}
-:::
 
 # **Resultados destacados**
 
@@ -132,9 +124,17 @@ Este proyecto se desarrolla de manera independiente y se encuentra disponible de
 
 - **El deterioro laboral se expresó especialmente en las condiciones del empleo.** La pérdida de peso del trabajo asalariado se profundizó, al mismo tiempo que aumentaron la tasa de no registro en las personas asalariadas y la tasa de empleo informal en el conjunto de los ocupados. Esto indica que el empeoramiento no se manifestó únicamente mediante una mayor desocupación, sino también a través de inserciones laborales más precarias.
 
-- **En Gran Mendoza, el empeoramiento del mercado de trabajo fue más pronunciado.** El aumento de la desocupación estuvo acompañado por una intensificación de la presión laboral, reflejada en el crecimiento de la subocupación demandante y de la ocupación demandante. A su vez, la tasa de no registro alcanzó el valor más elevado de la serie, lo que profundizó la distancia respecto del promedio de los 31 aglomerados urbanos.
+- **En Gran Mendoza, la degradación del mercado de trabajo fue más pronunciada.** El aumento de la desocupación estuvo acompañado por una intensificación de la presión laboral, reflejada en el crecimiento de la subocupación demandante y de la ocupación demandante. A su vez, la tasa de no registro alcanzó el valor más elevado del período 2016-2025, lo que profundizó la distancia respecto del promedio de los 31 aglomerados urbanos.
 
 - **Las desigualdades laborales afectaron especialmente a las mujeres y a la población joven.** En Gran Mendoza, el aumento de la desocupación fue más intenso entre las mujeres, quienes también presentaron mayores niveles de no registro e informalidad que los observados en el conjunto de los aglomerados urbanos. Por su parte, la población joven local enfrentó más dificultades tanto para acceder al empleo como para hacerlo en condiciones de formalidad.
+:::
+
+::: {.callout-note .cafecito-callout appearance="simple" icon="false"}
+## ¿Te resulta útil este informe?
+
+La elaboración y actualización de este documento constituyen un trabajo independiente que no cuenta actualmente con financiamiento institucional. Si considerás valiosa la producción periódica y de acceso abierto de información sobre el mercado de trabajo en Argentina y Mendoza, podés contribuir a sostenerla mediante Cafecito.
+
+[Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}
 :::
 
 # **Principales indicadores del mercado laboral**
@@ -148,7 +148,7 @@ Durante 2025, la economía argentina registró una recuperación del nivel de ac
 
 Esta recuperación agregada de la actividad no se tradujo en una mejora de los indicadores del mercado de trabajo: la desocupación aumentó y se deterioraron las condiciones de inserción laboral. No obstante, el proceso no se manifestó mediante una expulsión masiva de trabajadores hacia el desempleo abierto, sino principalmente a través de la pérdida de puestos de trabajo asalariados registrados y de la expansión de las inserciones informales, en un contexto de elevada participación económica (González, 2025; Robles et al., 2026).
 
-En relación con las tasas básicas del mercado laboral, los datos de la EPH muestran que, tras la contracción de la participación económica registrada durante la pandemia, la tasa de actividad promedio de los 31 aglomerados urbanos siguió una trayectoria ascendente y alcanzó en 2024 el nivel más elevado del período analizado (Pol et al., 2025). Durante 2025 se mantuvo en ese mismo porcentaje, lo que indica la persistencia de una elevada participación económica de la población. Este comportamiento podría vincularse, entre otros factores, con la necesidad de los hogares de sostener o ampliar sus fuentes de ingresos frente a la persistencia del deterioro de las remuneraciones laborales y la reducción del ingreso disponible. (González y Bonofiglio, 2025;
+En relación con las tasas básicas del mercado laboral, los datos de la EPH muestran que, tras la contracción de la participación económica registrada durante la pandemia, la tasa de actividad promedio de los 31 aglomerados urbanos siguió una trayectoria ascendente y alcanzó en 2024 el nivel más elevado del período analizado (Pol et al., 2025). Durante 2025 se mantuvo en ese mismo porcentaje, lo que indica la persistencia de una elevada participación económica de la población. Este comportamiento podría vincularse, entre otros factores, con la necesidad de los hogares de sostener o ampliar sus fuentes de ingresos frente a la persistencia del deterioro de las remuneraciones laborales y la reducción del ingreso disponible (González y Bonofiglio, 2025).
 
 La tasa de empleo también mostró una recuperación sostenida luego de la pandemia, que se extendió hasta 2023. Sin embargo, disminuyó durante los dos años siguientes. En correspondencia con esta evolución, la tasa de desocupación alcanzó su valor más bajo en 2023 y aumentó en 2024 y 2025. En conjunto, el desempeño de estos indicadores sugiere un debilitamiento de la capacidad del mercado de trabajo para generar puestos y absorber la oferta laboral existente.
 
@@ -623,7 +623,7 @@ La tasa de empleo informal según sector de la unidad económica muestra que est
 
 Como corresponde a su definición y construcción metodológica, el empleo de las personas ocupadas en el sector informal fue clasificado como informal. Por su parte, el sector hogares también presenta una elevada incidencia de la informalidad laboral: cerca de ocho de cada diez personas ocupadas en este sector tienen un empleo informal. Entre el cuarto trimestre de 2024 y el mismo período de 2025, esta población también registró un ligero incremento.
 
-En conjunto, las variaciones interanuales fueron reducidas, pero muestran una leve expansión de la informalidad tanto dentro del sector formal como del sector hogares. Esto indica que el aumento del empleo informal no se explica únicamente por el peso de las unidades económicas informales, sino también por la persistencia de relaciones laborales no formalizadas en sectores clasificados como formales y en los hogares.
+En conjunto, las variaciones interanuales fueron reducidas, pero muestran una leve expansión de la informalidad tanto dentro del sector formal como del sector hogares. Esto indica que el aumento del empleo informal no se explica únicamente por las unidades económicas informales, sino también por la persistencia de relaciones laborales no formalizadas en los otros sectores.
 
 ```{r}
 #| label: tasas-sector-informal
@@ -1270,7 +1270,7 @@ g_sexo_empleo_informal_mza <- tasa_empleo_informal_sexo_mza %>%
   
 ```
 
-La tasa de empleo informal, calculada a partir de las nuevas variables incorporadas por el INDEC a la EPH y que considera al conjunto de la población ocupada muestra una situación aún más desfavorable. En el cuarto trimestre de 2024, más de la mitad de las mujeres ocupadas en Gran Mendoza tenía un empleo informal, proporción que aumentó durante 2025. Entre los varones, la informalidad también se incrementó e incluso lo hizo en una magnitud algo mayor, lo que redujo la brecha entre ambos grupos. No obstante, esta disminución de la diferencia obedeció a un deterioro relativamente más intenso de la situación laboral de los varones y no a una mejora de las condiciones de empleo de las mujeres.
+La tasa de empleo informal, calculada a partir de las nuevas variables incorporadas por el INDEC a la EPH y que considera al conjunto de la población ocupada, muestra una situación aún más desfavorable. En el cuarto trimestre de 2024, más de la mitad de las mujeres ocupadas en Gran Mendoza tenía un empleo informal, proporción que aumentó durante 2025. Entre los varones, la informalidad también se incrementó e incluso lo hizo en una magnitud algo mayor, lo que redujo la brecha entre ambos grupos. No obstante, esta disminución de la diferencia obedeció a un deterioro relativamente más intenso de la situación laboral de los varones y no a una mejora de las condiciones de empleo de las mujeres.
 
 ```{r}
 #| echo: false
@@ -1757,7 +1757,7 @@ print(g_edad_empleo_informal_mza)
 
 Como complemento a este informe se presenta un tablero interactivo que permite consultar la evolución de los indicadores laborales durante 2016-2025, tanto en los 31 aglomerados urbanos como en Gran Mendoza. También, permite acceder a las series completas según sexo y grupos de edad. En el informe estos datos se analizan únicamente para 2024 y 2025.
 
-Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya que solo se encuentran disponibles desde el cuarto trimestre de 2024 y todavía no permiten construir una serie temporal para todo el período.
+Los nuevos indicadores de informalidad laboral no se incluyen en el tablero, ya que solo se encuentran disponibles desde el cuarto trimestre de 2024 y no permiten construir una serie temporal para el período analizado.
 
 [Explorar el tablero](https://valuledda-indicadores-laborales.share.connect.posit.cloud){.btn .btn-primary target="_blank"}
 
@@ -1799,12 +1799,6 @@ Ledda, Valentina (2026). El mercado de trabajo en Argentina y Mendoza durante 20
 
 # Sobre la autora
 
-**Valentina Ledda** es doctora en Ciencias Sociales, especialista en Métodos y técnicas de investigación social y licenciada en Sociología. Se dedica a la investigación social aplicada, el análisis de datos y la construcción de indicadores, especialmente en temas vinculados con el mercado de trabajo, la desigualdad y las condiciones de vida. Actualmente desarrolla este proyecto como investigadora independiente.
+**Valentina Ledda** es doctora en Ciencias Sociales, especialista en Métodos y Técnicas de Investigación Social, diplomada en Desigualdades y Políticas Públicas Distributivas, y licenciada en Sociología. Se dedica a la investigación social aplicada, el análisis de datos y la construcción de indicadores, especialmente en temas vinculados con el mercado de trabajo, las desigualdades sociales y las condiciones de vida. Actualmente desarrolla este proyecto como investigadora independiente.
 
 [Ver perfil en LinkedIn](https://www.linkedin.com/in/valentina-ledda/){.btn .btn-outline-primary target="_blank"}
-
-# Acerca de este proyecto
-
-La elaboración y actualización de este informe constituyen un trabajo independiente que no cuenta actualmente con financiamiento institucional. Si considerás valiosa la producción periódica y de acceso abierto de información sobre el mercado de trabajo en Argentina y Mendoza, podés contribuir a sostenerla mediante Cafecito.
-
-[Invitame un Cafecito ☕](https://cafecito.app/valuledda){.btn .btn-primary .cafecito-btn target="_blank"}

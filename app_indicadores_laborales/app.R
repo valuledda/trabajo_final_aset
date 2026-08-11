@@ -238,6 +238,9 @@ ui <- navbarPage(
         wellPanel(
           h3("Informe sobre el mercado de trabajo"),
           
+          div(
+            style = "font-size: 17px; line-height: 1.5;",
+          
           p(
             "Esta aplicación permite explorar de manera interactiva ",
             "los datos elaborados para el informe ",
@@ -262,7 +265,7 @@ ui <- navbarPage(
             "informalidad se excluyen de este tablero porque solo se encuentran ",
             "disponibles a partir del cuarto trimestre de 2024 y, por lo tanto, ",
             "no es posible construir una serie temporal para el conjunto del período."
-          ),
+          )),
           
           br(),
           
@@ -349,6 +352,9 @@ ui <- navbarPage(
           
           h3("Fuente de información y aspectos metodológicos"),
           
+          div(
+            style = "font-size: 17px; line-height: 1.5;",
+          
           p(
             "Fuente: Elaboración propia a partir de las bases de ",
             "microdatos de la Encuesta Permanente de Hogares (EPH) del ",
@@ -362,10 +368,11 @@ ui <- navbarPage(
             "corresponden a este dominio de estimación y no representan la totalidad",
             "del territorio nacional ni el conjunto de la provincia de Mendoza."
           ),
+          
           p("Los datos se presentan como promedios anuales elaborados a partir",
             "de los trimestres disponibles, criterio que permite reducir la incidencia",
             "de las fluctuaciones estacionales y ofrecer una lectura más estable de",
-            "las tendencias.")
+            "las tendencias."))
         )
       )
     )
@@ -418,6 +425,9 @@ tabPanel(
         
         h3("Sobre el tablero"),
         
+        div(
+          style = "font-size: 17px; line-height: 1.5;",
+        
         p(
           "El desarrollo, mantenimiento y actualización de este tablero ",
           "constituyen un trabajo independiente que no cuenta actualmente ",
@@ -432,7 +442,7 @@ tabPanel(
           "interactivas y de acceso abierto para analizar información ",
           "social y laboral de Argentina y Mendoza, podés contribuir a ",
           "sostener este proyecto mediante Cafecito."
-        ),
+        )),
         
         tags$a(
           href = "https://cafecito.app/valuledda",
@@ -453,16 +463,20 @@ tabPanel(
         
         h3("Sobre la autora"),
         
+        div(
+          style = "font-size: 17px; line-height: 1.5;",
+        
         p(
           tags$strong("Valentina Ledda"),
           " es doctora en Ciencias Sociales, especialista en Métodos y ",
-          "Técnicas de Investigación Social y licenciada en Sociología. ",
+          "Técnicas de Investigación Social, diplomada en Desigualdades ",
+          "y Políticas Públicas Distributivas, y licenciada en Sociología. ",
           "Se dedica a la investigación social aplicada, el análisis de ",
           "datos y la construcción de indicadores, especialmente en temas ",
-          "vinculados con el mercado de trabajo, la desigualdad y las ",
+          "vinculados con el mercado de trabajo, las desigualdades sociales y las ",
           "condiciones de vida. Actualmente desarrolla este proyecto como ",
           "investigadora independiente."
-        ),
+        )),
         
         div(
           style = "
@@ -478,11 +492,12 @@ tabPanel(
             style = "
               display: inline-block;
               margin: 0;
-              padding: 8px 14px;
+              padding: 10px 15px;
               color: #2FA4E7;
               background-color: transparent;
               border: 1px solid #2FA4E7;
               border-radius: 5px;
+              font-size: 16px;
               text-decoration: none;
             ",
             
